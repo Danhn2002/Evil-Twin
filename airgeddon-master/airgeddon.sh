@@ -14,17 +14,8 @@
 language="ENGLISH"
 declare -A lang_association=(
 								["en"]="ENGLISH"
-								["es"]="SPANISH"
-								["fr"]="FRENCH"
-								["ca"]="CATALAN"
-								["pt"]="PORTUGUESE"
-								["ru"]="RUSSIAN"
-								["gr"]="GREEK"
-								["it"]="ITALIAN"
-								["pl"]="POLISH"
-								["de"]="GERMAN"
-								["tr"]="TURKISH"
-								["ar"]="ARABIC"
+								["vn"]="VIETNAM"
+								
 							)
 
 rtl_languages=(
@@ -38,6 +29,7 @@ essential_tools_names=(
 						"airmon-ng"
 						"airodump-ng"
 						"aircrack-ng"
+						"aireplay-ng"
 						"xterm"
 						"ip"
 						"lspci"
@@ -496,115 +488,29 @@ function language_strings_handling_messages() {
 
 	declare -gA language_strings_no_file
 	language_strings_no_file["ENGLISH"]="Error. Language strings file not found"
-	language_strings_no_file["SPANISH"]="Error. No se ha encontrado el fichero de traducciones"
-	language_strings_no_file["FRENCH"]="Erreur. Fichier contenant les traductions absent"
-	language_strings_no_file["CATALAN"]="Error. No s'ha trobat el fitxer de traduccions"
-	language_strings_no_file["PORTUGUESE"]="Erro. O arquivo de tradução não foi encontrado"
-	language_strings_no_file["RUSSIAN"]="Ошибка. Не найден языковой файл"
-	language_strings_no_file["GREEK"]="Σφάλμα. Το αρχείο γλωσσών δεν βρέθηκε"
-	language_strings_no_file["ITALIAN"]="Errore. Non si trova il file delle traduzioni"
-	language_strings_no_file["POLISH"]="Błąd. Nie znaleziono pliku tłumaczenia"
-	language_strings_no_file["GERMAN"]="Fehler. Die Übersetzungsdatei wurde nicht gefunden"
-	language_strings_no_file["TURKISH"]="Hata. Çeviri dosyası bulunamadı"
-	language_strings_no_file["ARABIC"]="خطأ. ملف اللغة غير موجود"
+	language_strings_no_file["VIETNAM"]=""
 
 	declare -gA language_strings_file_mismatch
 	language_strings_file_mismatch["ENGLISH"]="Error. The language strings file found mismatches expected version"
-	language_strings_file_mismatch["SPANISH"]="Error. El fichero de traducciones encontrado no es la versión esperada"
-	language_strings_file_mismatch["FRENCH"]="Erreur. Les traductions trouvées ne sont pas celles attendues"
-	language_strings_file_mismatch["CATALAN"]="Error. El fitxer de traduccions trobat no és la versió esperada"
-	language_strings_file_mismatch["PORTUGUESE"]="Erro. O a versão do arquivos de tradução encontrado é a incompatível"
-	language_strings_file_mismatch["RUSSIAN"]="Ошибка. Языковой файл не соответствует ожидаемой версии"
-	language_strings_file_mismatch["GREEK"]="Σφάλμα. Το αρχείο γλωσσών που έχει βρεθεί δεν αντιστοιχεί με την προαπαιτούμενη έκδοση"
-	language_strings_file_mismatch["ITALIAN"]="Errore. Il file delle traduzioni trovato non è la versione prevista"
-	language_strings_file_mismatch["POLISH"]="Błąd. Znaleziony plik tłumaczenia nie jest oczekiwaną wersją"
-	language_strings_file_mismatch["GERMAN"]="Fehler. Die gefundene Übersetzungsdatei ist nicht die erwartete Version"
-	language_strings_file_mismatch["TURKISH"]="Hata. Bulunan çeviri dosyası beklenen sürüm değil"
-	language_strings_file_mismatch["ARABIC"]="خطأ. ملف اللغة غيرمتطابق مع الإصدار المتوقع"
+	language_strings_file_mismatch["VIETNAM"]=""
 
 	declare -gA language_strings_try_to_download
 	language_strings_try_to_download["ENGLISH"]="airgeddon will try to download the language strings file..."
-	language_strings_try_to_download["SPANISH"]="airgeddon intentará descargar el fichero de traducciones..."
-	language_strings_try_to_download["FRENCH"]="airgeddon va essayer de télécharger les fichiers de traductions..."
-	language_strings_try_to_download["CATALAN"]="airgeddon intentarà descarregar el fitxer de traduccions..."
-	language_strings_try_to_download["PORTUGUESE"]="O airgeddon tentará baixar o arquivo de tradução..."
-	language_strings_try_to_download["RUSSIAN"]="airgeddon попытается загрузить языковой файл..."
-	language_strings_try_to_download["GREEK"]="Το airgeddon θα προσπαθήσει να κατεβάσει το αρχείο γλωσσών..."
-	language_strings_try_to_download["ITALIAN"]="airgeddon cercherá di scaricare il file delle traduzioni..."
-	language_strings_try_to_download["POLISH"]="airgeddon spróbuje pobrać plik tłumaczeń..."
-	language_strings_try_to_download["GERMAN"]="airgeddon wird versuchen, die Übersetzungsdatei herunterzuladen..."
-	language_strings_try_to_download["TURKISH"]="airgeddon çeviri dosyasını indirmeye çalışacak..."
-	language_strings_try_to_download["ARABIC"]="سيحاول airgeddon تنزيل ملف سلاسل اللغة ..."
 
 	declare -gA language_strings_successfully_downloaded
 	language_strings_successfully_downloaded["ENGLISH"]="Language strings file was successfully downloaded"
-	language_strings_successfully_downloaded["SPANISH"]="Se ha descargado con éxito el fichero de traducciones"
-	language_strings_successfully_downloaded["FRENCH"]="Les fichiers traduction ont été correctement téléchargés"
-	language_strings_successfully_downloaded["CATALAN"]="S'ha descarregat amb èxit el fitxer de traduccions"
-	language_strings_successfully_downloaded["PORTUGUESE"]="O arquivo de tradução foi baixado com sucesso"
-	language_strings_successfully_downloaded["RUSSIAN"]="Языковой файл был успешно загружен"
-	language_strings_successfully_downloaded["GREEK"]="Το αρχείο γλωσσών κατέβηκε με επιτυχία"
-	language_strings_successfully_downloaded["ITALIAN"]="Il file delle traduzioni è stato scaricato con successo"
-	language_strings_successfully_downloaded["POLISH"]="Plik z tłumaczeniem został pomyślnie pobrany"
-	language_strings_successfully_downloaded["GERMAN"]="Die Übersetzungsdatei wurde erfolgreich heruntergeladen"
-	language_strings_successfully_downloaded["TURKISH"]="Çeviri dosyası başarıyla indirildi"
-	language_strings_successfully_downloaded["ARABIC"]="تم تنزيل ملف سلاسل اللغة بنجاح"
 
 	declare -gA language_strings_failed_downloading
 	language_strings_failed_downloading["ENGLISH"]="The language string file can't be downloaded. Check your internet connection or download it manually from ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["SPANISH"]="No se ha podido descargar el fichero de traducciones. Comprueba tu conexión a internet o descárgalo manualmente de ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["FRENCH"]="Impossible de télécharger le fichier traduction. Vérifiez votre connexion à internet ou téléchargez le fichier manuellement ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["CATALAN"]="No s'ha pogut descarregar el fitxer de traduccions. Comprova la connexió a internet o descarrega'l manualment de ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["PORTUGUESE"]="Não foi possível baixar o arquivos de tradução. Verifique a sua conexão com a internet ou baixe manualmente em ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["RUSSIAN"]="Языковой файл не может быть загружен. Проверьте подключение к Интернету или загрузите его вручную с ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["GREEK"]="Το αρχείο γλωσσών δεν μπορεί να κατέβει. Ελέγξτε τη σύνδεση σας με το διαδίκτυο ή κατεβάστε το χειροκίνητα ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["ITALIAN"]="Impossibile scaricare il file delle traduzioni. Controlla la tua connessione a internet o scaricalo manualmente ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["POLISH"]="Nie można pobrać pliku tłumaczenia. Sprawdź połączenie internetowe lub pobierz go ręcznie z ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["GERMAN"]="Die Übersetzungsdatei konnte nicht heruntergeladen werden. Überprüfen Sie Ihre Internetverbindung oder laden Sie sie manuell von ${normal_color}${urlgithub} runter"
-	language_strings_failed_downloading["TURKISH"]="Çeviri dosyası indirilemedi. İnternet bağlantınızı kontrol edin veya manuel olarak indirin ${normal_color}${urlgithub}"
-	language_strings_failed_downloading["ARABIC"]="${normal_color}${urlgithub}${red_color} لا يمكن تنزيل ملف اللغة. تحقق من اتصالك بالإنترنت أو قم بتنزيله يدويًا من"
-
+	
 	declare -gA language_strings_first_time
 	language_strings_first_time["ENGLISH"]="If you are seeing this message after an automatic update, don't be scared! It's probably because airgeddon has different file structure since version 6.1. It will be automatically fixed"
-	language_strings_first_time["SPANISH"]="Si estás viendo este mensaje tras una actualización automática, ¡no te asustes! probablemente es porque a partir de la versión 6.1 la estructura de ficheros de airgeddon ha cambiado. Se reparará automáticamente"
-	language_strings_first_time["FRENCH"]="Si vous voyez ce message après une mise à jour automatique ne vous inquiétez pas! A partir de la version 6.1 la structure de fichier d'airgeddon a changé. L'ajustement se fera automatiquement"
-	language_strings_first_time["CATALAN"]="Si estàs veient aquest missatge després d'una actualització automàtica, no t'espantis! probablement és perquè a partir de la versió 6.1 l'estructura de fitxers de airgeddon ha canviat. Es repararà automàticament"
-	language_strings_first_time["PORTUGUESE"]="Se você está vendo esta mensagem depois de uma atualização automática, não tenha medo! A partir da versão 6.1 da estrutura de arquivos do airgeddon mudou. Isso será corrigido automaticamente"
-	language_strings_first_time["RUSSIAN"]="Если вы видите это сообщение после автоматического обновления, не переживайте! Вероятно, это объясняется тем, что, начиная с версии 6.1, airgeddon имеет другую структуру файлов. Проблема будет разрешена автоматически"
-	language_strings_first_time["GREEK"]="Εάν βλέπετε αυτό το μήνυμα μετά από κάποια αυτόματη ενημέρωση, μην τρομάξετε! Πιθανόν είναι λόγω της διαφορετικής δομής του airgeddon μετά από την έκδοση 6.1. Θα επιδιορθωθεί αυτόματα"
-	language_strings_first_time["ITALIAN"]="Se stai vedendo questo messaggio dopo un aggiornamento automatico, niente panico! probabilmente è perché a partire dalla versione 6.1 é cambiata la struttura dei file di airgeddon. Sarà riparato automaticamente"
-	language_strings_first_time["POLISH"]="Jeśli widzisz tę wiadomość po automatycznej aktualizacji, nie obawiaj się! To prawdopodobnie dlatego, że w wersji 6.1 zmieniła się struktura plików airgeddon. Naprawi się automatycznie"
-	language_strings_first_time["GERMAN"]="Wenn Sie diese Nachricht nach einem automatischen Update sehen, haben Sie keine Angst! Das liegt vermutlich daran, dass ab Version 6.1 die Dateistruktur von airgeddon geändert wurde. Es wird automatisch repariert"
-	language_strings_first_time["TURKISH"]="Otomatik bir güncellemeden sonra bu mesajı görüyorsanız, korkmayın! muhtemelen 6.1 sürümünden itibaren airgeddon dosya yapısı değişmiştir. Otomatik olarak tamir edilecektir"
-	language_strings_first_time["ARABIC"]="إذا كنت ترى هذه الرسالة بعد التحديث التلقائي ، فلا تخف! ربما يرجع السبب في ذلك إلى أن airgeddon له بنية ملفات مختلفة منذ الإصدار 6.1. سيتم إصلاحه تلقائيًا "
 
 	declare -gA language_strings_exiting
 	language_strings_exiting["ENGLISH"]="Exiting airgeddon script v${airgeddon_version} - See you soon! :)"
-	language_strings_exiting["SPANISH"]="Saliendo de airgeddon script v${airgeddon_version} - Nos vemos pronto! :)"
-	language_strings_exiting["FRENCH"]="Fermeture du script airgeddon v${airgeddon_version} - A bientôt! :)"
-	language_strings_exiting["CATALAN"]="Sortint de airgeddon script v${airgeddon_version} - Ens veiem aviat! :)"
-	language_strings_exiting["PORTUGUESE"]="Saindo do script airgeddon v${airgeddon_version} - Até breve! :)"
-	language_strings_exiting["RUSSIAN"]="Выход из скрипта airgeddon v${airgeddon_version} - До встречи! :)"
-	language_strings_exiting["GREEK"]="Κλείσιμο του airgeddon v${airgeddon_version} - Αντίο :)"
-	language_strings_exiting["ITALIAN"]="Uscendo dallo script airgeddon v${airgeddon_version} - A presto! :)"
-	language_strings_exiting["POLISH"]="Wyjście z skryptu airgeddon v${airgeddon_version} - Do zobaczenia wkrótce! :)"
-	language_strings_exiting["GERMAN"]="Sie verlassen airgeddon v${airgeddon_version} - Bis bald! :)"
-	language_strings_exiting["TURKISH"]="airgeddon yazılımından çıkış yapılıyor v${airgeddon_version} - Yakında görüşürüz! :)"
-	language_strings_exiting["ARABIC"]="الخروج من البرنامج airgeddon v${airgeddon_version}- نراكم قريبًا! :)"
 
 	declare -gA language_strings_key_to_continue
 	language_strings_key_to_continue["ENGLISH"]="Press [Enter] key to continue..."
-	language_strings_key_to_continue["SPANISH"]="Pulsa la tecla [Enter] para continuar..."
-	language_strings_key_to_continue["FRENCH"]="Pressez [Enter] pour continuer..."
-	language_strings_key_to_continue["CATALAN"]="Prem la tecla [Enter] per continuar..."
-	language_strings_key_to_continue["PORTUGUESE"]="Pressione a tecla [Enter] para continuar..."
-	language_strings_key_to_continue["RUSSIAN"]="Нажмите клавишу [Enter] для продолжения..."
-	language_strings_key_to_continue["GREEK"]="Πατήστε το κουμπί [Enter] για να συνεχίσετε..."
-	language_strings_key_to_continue["ITALIAN"]="Premere il tasto [Enter] per continuare..."
-	language_strings_key_to_continue["POLISH"]="Naciśnij klawisz [Enter] aby kontynuować..."
-	language_strings_key_to_continue["GERMAN"]="Drücken Sie die [Enter]-Taste um fortzufahren..."
-	language_strings_key_to_continue["TURKISH"]="Devam etmek için [Enter] tuşuna basın..."
-	language_strings_key_to_continue["ARABIC"]="اضغط على مفتاح [Enter] للمتابعة ..."
 }
 
 #Generic toggle option function
@@ -2253,100 +2159,10 @@ function language_menu() {
 			language_strings "${language}" 115 "read"
 		;;
 		2)
-			if [ "${language}" = "SPANISH" ]; then
+			if [ "${language}" = "VIETNAM" ]; then
 				language_strings "${language}" 251 "red"
 			else
-				language="SPANISH"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		3)
-			if [ "${language}" = "FRENCH" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="FRENCH"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		4)
-			if [ "${language}" = "CATALAN" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="CATALAN"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		5)
-			if [ "${language}" = "PORTUGUESE" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="PORTUGUESE"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		6)
-			if [ "${language}" = "RUSSIAN" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="RUSSIAN"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		7)
-			if [ "${language}" = "GREEK" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="GREEK"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		8)
-			if [ "${language}" = "ITALIAN" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="ITALIAN"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		9)
-			if [ "${language}" = "POLISH" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="POLISH"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		10)
-			if [ "${language}" = "GERMAN" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="GERMAN"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		11)
-			if [ "${language}" = "TURKISH" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="TURKISH"
-				language_strings "${language}" 83 "yellow"
-			fi
-			language_strings "${language}" 115 "read"
-		;;
-		12)
-			if [ "${language}" = "ARABIC" ]; then
-				language_strings "${language}" 251 "red"
-			else
-				language="ARABIC"
+				language="VIETNAM"
 				language_strings "${language}" 83 "yellow"
 			fi
 			language_strings "${language}" 115 "read"
@@ -8476,37 +8292,7 @@ function set_captive_portal_language() {
 			captive_portal_language="ENGLISH"
 		;;
 		2)
-			captive_portal_language="SPANISH"
-		;;
-		3)
-			captive_portal_language="FRENCH"
-		;;
-		4)
-			captive_portal_language="CATALAN"
-		;;
-		5)
-			captive_portal_language="PORTUGUESE"
-		;;
-		6)
-			captive_portal_language="RUSSIAN"
-		;;
-		7)
-			captive_portal_language="GREEK"
-		;;
-		8)
-			captive_portal_language="ITALIAN"
-		;;
-		9)
-			captive_portal_language="POLISH"
-		;;
-		10)
-			captive_portal_language="GERMAN"
-		;;
-		11)
-			captive_portal_language="TURKISH"
-		;;
-		12)
-			captive_portal_language="ARABIC"
+			captive_portal_language="VIETNAM"
 		;;
 		*)
 			invalid_captive_portal_language_selected
