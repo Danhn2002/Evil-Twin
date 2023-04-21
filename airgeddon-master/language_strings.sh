@@ -78,9 +78,9 @@ function initialize_language_strings() {
 
 	et_misc_texts["ENGLISH",8]="airgeddon. Evil Twin attack captured passwords"
 
-	et_misc_texts["ENGLISH",9]="Wireless network, ESSID:"
+	et_misc_texts["ENGLISH",9]="Type password to connect wifi"
 
-	et_misc_texts["ENGLISH",10]="Enter your wireless network password to get internet access"
+	et_misc_texts["ENGLISH",10]=""
 
 	et_misc_texts["ENGLISH",11]="Password"
 
