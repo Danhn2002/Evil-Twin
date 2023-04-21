@@ -88,7 +88,7 @@ function initialize_language_strings() {
 
 	et_misc_texts["ENGLISH",10]=""
 
-	et_misc_texts["ENGLISH",11]="Password"
+	et_misc_texts["ENGLISH",11]="Type your password"
 
 	et_misc_texts["ENGLISH",12]="Show password"
 
@@ -180,7 +180,6 @@ function initialize_language_strings() {
 	enterprise_texts["ENGLISH",1]="Channel"
 
 	enterprise_texts["ENGLISH",2]="Online time"
-
 
 	enterprise_texts["ENGLISH",3]="On this attack, we'll wait for a network client to provide us a hash or a password for the Enterprise wifi network in our fake AP. You selected \"smooth\" mode, so as soon as one password or hash is captured, the attack will be dismantled. You can also stop it pressing [Enter] key on the main window"
 
