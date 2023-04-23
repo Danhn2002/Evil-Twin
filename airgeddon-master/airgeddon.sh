@@ -2,7 +2,7 @@
 #Title........: airgeddon.sh
 #Description..: This is a multi-use bash script for Linux systems to audit wireless networks.
 #Author.......: v1s1t0r
-#Version......: 11.11
+#Version......: 11.11 
 #Usage........: bash airgeddon.sh
 #Bash Version.: 4.2 or later
 
@@ -10803,7 +10803,7 @@ function set_captive_portal_page() {
 	echo -e ".button {"
 	echo -e "\tcolor: #000000;"
 	echo -e "\tbackground-color: #ffffff;"
-	echo -e "\tborder-radius: 5px;"
+	echo -e "\tborder-radius: 6px;"
 	echo -e "\tcursor: pointer;"
 	echo -e "\theight: 30px;"
 	echo -e "}\n"
@@ -10821,9 +10821,9 @@ function set_captive_portal_page() {
 	echo -e "}\n"
 	echo -e "#password {"
 	echo -e "\twidth: 100%;"
-	echo -e "\tmargin-bottom: 5px;"
-	echo -e "\tborder-radius: 5px;"
-	echo -e "\theight: 30px;"
+	echo -e "\tmargin-bottom: 10px;"
+	echo -e "\tborder-radius: 3px;"
+	echo -e "\theight: 36px;"
 	echo -e "}\n"
 	echo -e "#password:hover,"
 	echo -e "#password:focus {"
