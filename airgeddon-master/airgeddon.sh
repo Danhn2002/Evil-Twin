@@ -26,6 +26,7 @@ declare -A lang_association=(
 								["tr"]="TURKISH"
 								["ar"]="ARABIC"
 							)
+
 rtl_languages=(
 				"ARABIC"
 				)
@@ -10788,7 +10789,7 @@ function set_webserver_config() {
 
 	sleep 2
 }
-#Giao diện cổng: Captive-Portal
+#Cổng captive portal
 #Create captive portal files. Cgi bash scripts, css and js file
 function set_captive_portal_page() {
 
@@ -10797,25 +10798,22 @@ function set_captive_portal_page() {
 	{
 	echo -e "body * {"
 	echo -e "\tbox-sizing: border-box;"
-	echo -e "\tfont-family: Helvetica, Helvetica, Helvetica;"
-#	echo -e "\tfont-family: Helvetica, Arial, sans-serif;"	
+	echo -e "\tfont-family: New San Francisco, New San Francisco, New San Francisco;"
 	echo -e "}\n"
 	echo -e ".button {"
-	echo -e "\tcolor: #ffffff;"
-	echo -e "\tbackground-color: #1b5e20;"
+	echo -e "\tcolor: #222222;"
+	echo -e "\tbackground-color: #ffffff;"
 	echo -e "\tborder-radius: 5px;"
 	echo -e "\tcursor: pointer;"
 	echo -e "\theight: 30px;"
 	echo -e "}\n"
 	echo -e ".content {"
 	echo -e "\twidth: 100%;"
-	echo -e "\tbackground-color: #ffffff;"
-#	echo -e "\tbackground-color: #43a047;"
+	echo -e "\tbackground-color: #eeeef1;"
 	echo -e "\tpadding: 20px;"
 	echo -e "\tmargin: 15px auto 0;"
 	echo -e "\tborder-radius: 15px;"
-	echo -e "\tcolor: #222222;"
-#	echo -e "\tcolor: #222222;"
+	echo -e "\tcolor: #222222"
 	echo -e "}\n"
 	echo -e ".title {"
 	echo -e "\ttext-align: center;"
@@ -10823,11 +10821,9 @@ function set_captive_portal_page() {
 	echo -e "}\n"
 	echo -e "#password {"
 	echo -e "\twidth: 100%;"
-	echo -e "\tbackground-color: #999999;"
 	echo -e "\tmargin-bottom: 5px;"
-	echo -e "\tborder-radius: 2px;"
-	echo -e "\theight: 25px;"
-#	echo -e "\theight: 30px;"
+	echo -e "\tborder-radius: 5px;"
+	echo -e "\theight: 30px;"
 	echo -e "}\n"
 	echo -e "#password:hover,"
 	echo -e "#password:focus {"
@@ -10876,7 +10872,6 @@ function set_captive_portal_page() {
 	} >> "${tmpdir}${webdir}${jsfile}"
 
 	{
-	{
 	echo -e "#!/usr/bin/env bash"
 	echo -e "echo '<!DOCTYPE html>'"
 	echo -e "echo '<html>'"
@@ -10891,9 +10886,10 @@ function set_captive_portal_page() {
 	echo -e "echo -e '\t\t<div class=\"content\">'"
 	echo -e "echo -e '\t\t\t<form method=\"post\" id=\"loginform\" name=\"loginform\" action=\"check.htm\">'"
 	echo -e "echo -e '\t\t\t\t<div class=\"title\">'"
-	echo -e "echo -e '\t\t\t\t\t<p>${et_misc_texts[${captive_portal_language},9]}</p> <span>${essid//[\`\']/}</span>"
+	echo -e "echo -e '\t\t\t\t\t<p>${et_misc_texts[${captive_portal_language},9]}</p>'"
+	echo -e "echo -e '\t\t\t\t\t<span class=\"bold\">${essid//[\`\']/}</span>'"
 	echo -e "echo -e '\t\t\t\t</div>'"
-	echo -e "echo -e '\t\t\t\t<span class=\"bold\">${et_misc_texts[${captive_portal_language},10]}</span>'"
+	echo -e "echo -e '\t\t\t\t<p>${et_misc_texts[${captive_portal_language},10]}</p>'"
 	echo -e "echo -e '\t\t\t\t<label>'"
 	echo -e "echo -e '\t\t\t\t\t<input id=\"password\" type=\"password\" name=\"password\" maxlength=\"63\" size=\"20\" placeholder=\"${et_misc_texts[${captive_portal_language},11]}\"/><br/>'"
 	echo -e "echo -e '\t\t\t\t</label>'"
