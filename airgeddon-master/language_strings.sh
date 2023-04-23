@@ -278,7 +278,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",9]="Kablosuz ağ, ESSID:"
 	et_misc_texts["ARABIC",9]=":الشبكه اللاسلكية"
 
-	et_misc_texts["ENGLISH",10]=" "
+	et_misc_texts["ENGLISH",10]=""
 	et_misc_texts["SPANISH",10]="Introduzca su contraseña de acceso a la red inalámbrica para poder acceder a internet"
 	et_misc_texts["FRENCH",10]="Veuillez saisir la clé de sécurité du réseau wifi pour obtenir accès à internet"
 	et_misc_texts["CATALAN",10]="Introduïu la contrasenya d&#39;accés a la xarxa sense fils per poder accedir a internet"
@@ -356,7 +356,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",15]="İnternet Portalı"
 	et_misc_texts["ARABIC",15]="بوابة الإنترنت"
 
-	et_misc_texts["ENGLISH",16]="The password must be at least 8 characters"
+	et_misc_texts["ENGLISH",16]="Mật khẩu phải dài hơn 8 ký tự."
 	et_misc_texts["SPANISH",16]="La contraseña debe tener al menos 8 caracteres"
 	et_misc_texts["FRENCH",16]="La clé de sécurité doit contenir au moins 8 caractères"
 	et_misc_texts["CATALAN",16]="La contrasenya ha de tenir almenys 8 caràcters"
