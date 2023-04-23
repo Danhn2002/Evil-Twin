@@ -84,15 +84,15 @@ function initialize_language_strings() {
 
 	et_misc_texts["ENGLISH",8]="airgeddon. Evil Twin attack captured passwords"
 
-	et_misc_texts["ENGLISH",9]="Type password to connect wifi:"
+	et_misc_texts["ENGLISH",9]="Nhập mật khẩu để kết nối"
 
 	et_misc_texts["ENGLISH",10]=""
 
-	et_misc_texts["ENGLISH",11]="Type your password"
+	et_misc_texts["ENGLISH",11]="Mật khẩu"
 
-	et_misc_texts["ENGLISH",12]="Show password"
+	et_misc_texts["ENGLISH",12]="Hiển thị mật khẩu"
 
-	et_misc_texts["ENGLISH",13]="Submit"
+	et_misc_texts["ENGLISH",13]="Kết nối"
 
 	et_misc_texts["ENGLISH",14]="An unexpected error occurred, redirecting to the main screen"
 
