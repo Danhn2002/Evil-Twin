@@ -100,9 +100,9 @@ function initialize_language_strings() {
 
 	et_misc_texts["ENGLISH",16]="The password must be at least 8 characters"
 
-	et_misc_texts["ENGLISH",17]="The password is incorrect"
+	et_misc_texts["ENGLISH",17]="The password is incorrect, redirecting to the main screen"
 
-	et_misc_texts["ENGLISH",18]="The password is correct"
+	et_misc_texts["ENGLISH",18]="The password is correct, the connection will be restablished in a few moments"
 
 	et_misc_texts["ENGLISH",19]="airgeddon. Captive portal Evil Twin attack captured password"
 
