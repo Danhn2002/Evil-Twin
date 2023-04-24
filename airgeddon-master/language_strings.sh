@@ -265,7 +265,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",8]="airgeddon. Şeytani İkiz şifreleri yakaladı"
 	et_misc_texts["ARABIC",8]="Evil Twin كلمات المرور التي تم التقاطها بواسطة هجوم .airgeddon"
 
-	et_misc_texts["ENGLISH",9]="Nhập mật khẩu cho:"
+	et_misc_texts["ENGLISH",9]="Wireless network, ESSID:"
 	et_misc_texts["SPANISH",9]="Red inalámbrica, ESSID:"
 	et_misc_texts["FRENCH",9]="Réseau sans fil, ESSID:"
 	et_misc_texts["CATALAN",9]="Xarxa sense fils, ESSID:"
@@ -278,7 +278,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",9]="Kablosuz ağ, ESSID:"
 	et_misc_texts["ARABIC",9]=":الشبكه اللاسلكية"
 
-	et_misc_texts["ENGLISH",10]="              "
+	et_misc_texts["ENGLISH",10]=""
 	et_misc_texts["SPANISH",10]="Introduzca su contraseña de acceso a la red inalámbrica para poder acceder a internet"
 	et_misc_texts["FRENCH",10]="Veuillez saisir la clé de sécurité du réseau wifi pour obtenir accès à internet"
 	et_misc_texts["CATALAN",10]="Introduïu la contrasenya d&#39;accés a la xarxa sense fils per poder accedir a internet"
@@ -291,7 +291,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",10]="İnternete bağlanabilmek için kablosuz ağ şifrenizi girmelisiniz"
 	et_misc_texts["ARABIC",10]="أدخل كلمة مرور الشبكة اللاسلكية للوصول إلى الإنترنت"
 
-	et_misc_texts["ENGLISH",11]="Mật khẩu"
+	et_misc_texts["ENGLISH",11]="Password"
 	et_misc_texts["SPANISH",11]="Contraseña"
 	et_misc_texts["FRENCH",11]="Clé de sécurité"
 	et_misc_texts["CATALAN",11]="Contrasenya"
@@ -304,7 +304,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",11]="Şifre"
 	et_misc_texts["ARABIC",11]="كلمه السر"
 
-	et_misc_texts["ENGLISH",12]="Hiện mật khẩu"
+	et_misc_texts["ENGLISH",12]="Show password"
 	et_misc_texts["SPANISH",12]="Mostrar contraseña"
 	et_misc_texts["FRENCH",12]="Afficher les caractères"
 	et_misc_texts["CATALAN",12]="Mostra la contrasenya"
@@ -317,7 +317,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",12]="Şifreyi göster"
 	et_misc_texts["ARABIC",12]="إظهار كلمة المرور"
 
-	et_misc_texts["ENGLISH",13]="Kết nối"
+	et_misc_texts["ENGLISH",13]="Submit"
 	et_misc_texts["SPANISH",13]="Enviar"
 	et_misc_texts["FRENCH",13]="Enregistrer"
 	et_misc_texts["CATALAN",13]="Enviar"
@@ -356,7 +356,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",15]="İnternet Portalı"
 	et_misc_texts["ARABIC",15]="بوابة الإنترنت"
 
-	et_misc_texts["ENGLISH",16]="Mật khẩu phải dài hơn 8 ký tự!"
+	et_misc_texts["ENGLISH",16]="The password must be at least 8 characters"
 	et_misc_texts["SPANISH",16]="La contraseña debe tener al menos 8 caracteres"
 	et_misc_texts["FRENCH",16]="La clé de sécurité doit contenir au moins 8 caractères"
 	et_misc_texts["CATALAN",16]="La contrasenya ha de tenir almenys 8 caràcters"
@@ -369,7 +369,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",16]="Şifre en az 8 karakter olmalıdır"
 	et_misc_texts["ARABIC",16]="يجب أن تكون كلمة السر على الأقل 8 أحرف"
 
-	et_misc_texts["ENGLISH",17]="Mật khẩu sai, vui lòng nhập lại!"
+	et_misc_texts["ENGLISH",17]="The password is incorrect, redirecting to the main screen"
 	et_misc_texts["SPANISH",17]="La contraseña introducida es incorrecta, redirigiendo a la pantalla principal"
 	et_misc_texts["FRENCH",17]="Clé de sécurité incorrecte, retour à l&#39;écran principal"
 	et_misc_texts["CATALAN",17]="La contrasenya introduïda és incorrecta, redirigint a la pantalla principal"
@@ -382,7 +382,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",17]="Şifre yanlış, anasayfaya yönlendiriliyorsunuz"
 	et_misc_texts["ARABIC",17]="كلمة السر غير صحيحة، سيتم إعادة التوجيه إلى الشاشة الرئيسية"
 
-	et_misc_texts["ENGLISH",18]="Đang kết nối..."
+	et_misc_texts["ENGLISH",18]="The password is correct, the connection will be restablished in a few moments"
 	et_misc_texts["SPANISH",18]="La contraseña es correcta, la conexión se restablecerá en unos momentos"
 	et_misc_texts["FRENCH",18]="Clé de sécurité correcte, la connexion sera établie dans quelques instants"
 	et_misc_texts["CATALAN",18]="La contrasenya és correcta, la connexió es restablirà en uns moments"
